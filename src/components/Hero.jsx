@@ -6,9 +6,8 @@ function Hero() {
       data-bs-ride="carousel"
     >
 
-      {/* Carousel Indicators */}
+      {/* Indicators */}
       <div className="carousel-indicators">
-
         <button
           type="button"
           data-bs-target="#hero"
@@ -30,66 +29,115 @@ function Hero() {
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
-
       </div>
 
-      {/* Carousel Items */}
+      {/* Carousel */}
       <div className="carousel-inner">
 
-        {/* Slide 1 */}
+        {/* ================= SLIDE 1 ================= */}
         <div className="carousel-item active">
 
           <img
             src="/hero1.jpg"
             className="d-block w-100 hero-image"
-            alt="College campus"
+            alt="Dr. Dharmendra Singh B.S. Mahavidyalaya"
           />
 
           <div className="hero-overlay"></div>
 
           <div className="carousel-caption hero-content">
 
-            <p className="hero-small">
-             AIM GROUP OF INSTITUTION
-            </p>
+            <div className="container">
 
-            <h1>
-              BCA | BBA | Bs.c Nursing | LLB | B.Ed | B.Com  
-              <br />
+              <div className="row align-items-center">
 
-              <span>
-                Career-Ready Programs
-              </span>
-            </h1>
+                {/* LEFT CONTENT */}
+                <div className="col-lg-8 text-start">
 
-            <p>
-              Launch your professional career with our
-              industry-aligned programs. Skilled faculty,
-              modern labs, and practical training to make
-              you job-ready.
-            </p>
+                  <p className="text-uppercase fw-semibold mb-3 hero-kicker">
+                    Welcome to
+                  </p>
 
-            <div className="mt-4">
+                  <h1 className="display-3 fw-bold mb-3">
+                    Dr. Dharmendra Singh
+                    <br />
+                    <span>B.S. Mahavidyalaya</span>
+                  </h1>
 
-              {/* Courses Button */}
-              <a
-                href="#courses"
-                className="btn explore-btn"
-              >
-                Professional Courses
+                  <div className="hero-line mb-4"></div>
 
-                <i className="bi bi-arrow-right ms-2"></i>
-              </a>
+                  <p className="lead mb-4 hero-affiliation">
+                    Affiliated with
+                    <strong>
+                      {" "}Chhatrapati Shahu Ji Maharaj University
+                    </strong>
+                    <br />
+                    (C.S.J.M.U), Kanpur
+                  </p>
 
-              {/* Enquiry Button */}
-              <a
-                href="#contact"
-                className="btn apply-btn"
-              >
-                Enquire Now
+                  <p className="mb-4 hero-organizer">
+                   Organized By: A Proud Initiative of
+                    <strong> AIM Group of Institutions</strong>
+                  </p>
 
-                <i className="bi bi-send ms-2"></i>
-              </a>
+                  <div className="d-flex flex-wrap gap-3">
+
+                    <a
+                      href="#admission"
+                      className="btn btn-warning btn-lg px-4 py-3 rounded-2 fw-semibold"
+                    >
+                      Apply Online
+                      <i className="bi bi-arrow-up-right ms-2"></i>
+                    </a>
+
+                    <a
+                      href="#contact"
+                      className="btn btn-outline-light btn-lg px-4 py-3 rounded-2 fw-semibold"
+                    >
+                      Admission Enquiry
+                      <i className="bi bi-arrow-right ms-2"></i>
+                    </a>
+
+                  </div>
+
+                </div>
+
+
+                {/* RIGHT ADMISSION CARD */}
+                <div className="col-lg-4 d-none d-lg-block">
+
+                  <div className="admission-card">
+
+                    <div className="admission-icon">
+                      <i className="bi bi-mortarboard-fill"></i>
+                    </div>
+
+                    <p className="small text-uppercase fw-semibold mb-2">
+                      Admissions Open
+                    </p>
+
+                    <h3 className="fw-bold mb-3">
+                      2026
+                    </h3>
+
+                    <p className="small mb-4">
+                      Begin your journey towards a
+                      brighter academic future.
+                    </p>
+
+                    <a
+                      href="#admission"
+                      className="btn btn-light w-100 rounded-2 fw-semibold"
+                    >
+                      Apply Now
+                      <i className="bi bi-arrow-right ms-2"></i>
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
 
             </div>
 
@@ -97,7 +145,8 @@ function Hero() {
 
         </div>
 
-        {/* Slide 2 & 3 */}
+
+        {/* ================= SLIDE 2 & 3 ================= */}
         {[2, 3].map((number) => (
 
           <div
@@ -119,7 +168,8 @@ function Hero() {
 
       </div>
 
-      {/* Previous Button */}
+
+      {/* Previous */}
       <button
         className="carousel-control-prev"
         type="button"
@@ -129,7 +179,8 @@ function Hero() {
         <span className="carousel-control-prev-icon"></span>
       </button>
 
-      {/* Next Button */}
+
+      {/* Next */}
       <button
         className="carousel-control-next"
         type="button"
